@@ -1,0 +1,13 @@
+name: any-tf-invoke-error
+description: A minimal C# Pulumi program
+runtime: dotnet
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: csharp
+packages:
+  local:
+    source: terraform-provider
+    version: 0.12.0
+    parameters:
+      - hashicorp/local
